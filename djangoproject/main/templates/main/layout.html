@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{%block title %} {% endblock %}</title>
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+    <ul>
+        <a href="{% url 'homepage' %} "><li>Главная</li></a>
+        <a href="{% url 'about' %}"><li>О сайте</li></a>
+        <a href="{% url 'add' %}"><li>Добавить магазин</li></a>
+    </ul>
+
+</body>
+</html>
